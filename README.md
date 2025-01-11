@@ -10,8 +10,10 @@ Must have an idea on how to manipluate the repository using git commands.
 
 2 - Then dvc init (This will result in error for this case because git is tracking data so running this command will suggest two commands which you must run before dvc init)
 
-3 - Now since we are using dvc and github, they must go hand in hand so like github you must first use dvc commit and dvc push to push the data to storage after this push code changes on github
+3 - dvc remote add -d myremote <name of the source> for version control manipluation by dvc
 
-4 - Once you rollback to previous commint, dvc pull so that you have the corresponding data of that version.
+4 - Now since we are using dvc and github, they must go hand in hand so like github you must first use dvc commit and dvc push to push the data to storage after this push code changes on github
+
+5 - Once you rollback to previous commint, dvc pull so that you have the corresponding data of that version.
 
 
